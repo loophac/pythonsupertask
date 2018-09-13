@@ -1,9 +1,7 @@
-# Python Supertask playground by Loophac 
+import time 
 
 
 
-
-import time
 t = 5 #number of trials to be ran; default 5
 
 def do():
@@ -23,7 +21,9 @@ def do():
   
     if time.time() > start + PERIOD_OF_TIME :
       print("|%s changes         | " % c1) #this outputs the maximum number of changes that occured during each trial
+      print(PERIOD_OF_TIME) 
       break
-    
+   
 for _ in range(t):
   do()    
+
